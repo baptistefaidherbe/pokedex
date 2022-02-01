@@ -1,9 +1,9 @@
 # Pokédex
 
 Ce petit pokedex permet de :
- - Lister les pokemon. On peut 
- - Afficher le détail d'un pokémon, son type et ses stats 
- - filtrer les pokemon par type
+ - Lister les pokemon,
+ - Afficher le détail d'un pokémon, son type et ses stats,
+ - Filtrer les pokemon par type
 
 
 NodeJS / Express
