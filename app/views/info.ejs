@@ -1,0 +1,73 @@
+<%- include('partials/header') %>
+
+
+<h1 class="title--infoPokemon">Détails de <%= info.nom %></h1>
+
+<div class="container">
+
+
+
+    <img src="/img/<%= info.numero %>.png" alt="<%= info.nom %>">
+
+    <div class="infoPokemon">
+
+        <h2>#<%= info.numero %> <%= info.nom %></h2>
+
+        <div class="type">
+            <% for(type of types){ %>
+            <button style="background-color: #<%= type.color %>;" class="type_btn"><%= type.name %></button>
+            <% } %>
+        </div>
+        <h3>Statistiques</h3>
+        <div class="stats">
+
+            <table>
+
+                <tbody>
+                    <tr>
+                        <th>PV</th>
+                        <td class="td"><%= info.pv %></td>
+                        <td><progress id="file" max="100" value="<%=stat %>"></progress></td>
+                    </tr>
+                    <tr>
+                        <th>Attaque</th>
+                        <td class="td"><%= info.attaque %></td>
+                        <td><progress id="file" max="100" value="<%=attaque %>"></progress></td>
+                    </tr>
+                    <tr>
+                        <th>Défense</th>
+                        <td class="td"><%= info.defense %></td>
+                        <td><progress id="file" max="100" value="<%=defense %>"></progress></td>
+                    </tr>
+                    <tr>
+                        <th>Attaque Spé.</th>
+                        <td class="td"><%= info.attaque_spe %></td>
+                        <td><progress id="file" max="100" value="<%= attaque_spe %>"></progress></td>
+                    </tr>
+                    <tr>
+                        <th>Défense Spé.</th>
+                        <td class="td"><%= info.defense_spe %></td>
+                        <td><progress id="file" max="100" value="<%=defense_spe %>"></progress></td>
+                    </tr>
+                    <tr>
+                        <th>Vitesse</th>
+                        <td class="td"><%= info.vitesse %></td>
+                        <td><progress id="file" max="100" value="<%=vitesse %>"></progress></td>
+                    </tr>
+                </tbody>
+
+
+            </table>
+     
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<a class="returnHome" href="/">Revenir à la liste</a>
+
+
+<%- include('partials/footer') %>

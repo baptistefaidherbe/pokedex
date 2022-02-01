@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+
+
+<div class="container">
+
+    <h2 class="h2Type">Cliquer sur un type pour voir tous les pokemon de ce type</h2>
+
+
+    <div class="type2">
+        <% for(type of types){ %>
+        <a href="/type/pokemon/<%= type.name %>" style="background-color: #<%= type.color %>;"
+            class="type_btn2"><%= type.name %> </a>
+        <% } %>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+<%- include('partials/footer') %>

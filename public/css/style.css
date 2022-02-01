@@ -1,0 +1,230 @@
+body {
+
+    background-color: #C14040;
+    font-family: 'Bree Serif', serif;
+
+}
+
+header {
+
+
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px 5px;
+    display: flex;
+    padding: 20px 30px;
+    justify-content: space-between;
+
+
+}
+
+.logo {
+
+    font-size: 2em;
+    color: #C54040;
+
+}
+
+nav {
+    line-height: 32px;
+
+}
+
+nav a {
+
+    text-decoration: none;
+    color: #C54040;
+    padding-right: 8px;
+    font-size: 1.2em;
+}
+
+.container {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.pokemon--container {
+
+    background-color: #982C2C;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.pokemon--container img {
+
+    width: 65%;
+}
+
+.pokemon--container h2 {
+
+    padding: 15px 5px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+
+}
+
+.pokemon--container a{
+
+    text-decoration: none;
+}
+
+.infoPokemon {
+
+    background-color: #AB3838;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+    color: white;
+    border-radius: 15px;
+    margin: 0 10px;
+
+
+}
+
+.title--infoPokemon{
+
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.infoPokemon h2 {
+
+    font-size: 1.6em;
+    margin:15px 0;
+    font-weight: bold;
+}
+   
+    
+    
+
+
+.type{
+
+    margin:15px 0;
+}
+
+.type_btn {
+
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+.type2{
+
+    margin:15px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  
+}
+
+.h2Type{
+
+    color :white;
+    margin: 15px 0;
+}
+
+.type_btn2 {
+
+    padding: 20px 100px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin: 10px 10px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    
+
+    
+}
+
+.type_btn:focus{
+
+    outline:none;
+}
+
+
+.returnHome {
+
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+    display: block;
+    text-decoration: none;
+}
+.infoPokemon h3 {
+
+    font-size: 1.4em;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+.stats th {
+
+    text-align: left;
+    vertical-align: middle;
+
+}
+
+.td {
+
+    padding: 2px 50px;
+    vertical-align: middle;
+
+}
+
+
+
+
+
+  /* For Chrome or Safari */
+  progress::-webkit-progress-bar {
+    background-color: #632B2B;
+    border-radius: 5px;
+    
+  
+}
+
+progress::-webkit-progress-value {
+    background-color: white !important;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+/* For Firefox */
+progress {
+    background-color: #632B2B;
+}
+
+progress::-moz-progress-bar {
+    background-color: #632B2B !important;
+}
+
+/* For IE10 */
+progress {
+    background-color: #632B2B;
+}
+
+progress {
+ 
+    border-radius: 5px;
+    height: 20px;
+    width: 350px;
+    margin: 5px 0;
+}
